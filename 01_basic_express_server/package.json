@@ -1,0 +1,14 @@
+{
+  "name": "cohort-codes",
+  "version": "1.0.0",
+  "main": "hospital_server.js",
+  "scripts": {
+   "start": "node hospital_server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
