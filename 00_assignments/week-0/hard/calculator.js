@@ -15,7 +15,72 @@
 
   Once you've implemented the logic, test your code by running
 */
+class Calculator {
+  constructor() {
+    this.result = 0;
+  }
 
-class Calculator {}
+  // Adds a number to the result
+  add(num) {
+    this.result += num;
+  }
+
+  // Subtracts a number from the result
+  subtract(num) {
+    this.result -= num;
+  }
+
+  // Multiplies the result by a number
+  multiply(num) {
+    this.result *= num;
+  }
+
+  // Divides the result by a number
+  divide(num) {
+    if (num === 0) {
+      throw new Error("Cannot divide by zero");
+    }
+    this.result /= num;
+  }
+
+  // Clears the result (sets it to 0)
+  clear() {
+    this.result = 0;
+  }
+
+  // Returns the current result
+  getResult() {
+    return this.result;
+  }
+
+  // Parses and evaluates an arithmetic expression
+  calculate(expression) {
+    // Remove all spaces from the expression
+    expression = expression.replace(/\s+/g, "");
+
+    // Check if the expression contains invalid characters
+    if (/[^0-9+\-*/().]/.test(expression)) {
+      throw new Error("Invalid characters in the expression");
+    }
+
+    // Check for division by zero before evaluating the expression
+    if (expression.includes("/0")) {
+      throw new Error("Cannot divide by zero");
+    }
+
+    // Use JavaScript's built-in `eval()` to calculate the expression
+    try {
+      this.result = eval(expression);
+      if (isNaN(this.result)) {
+        throw new Error("Invalid expression");
+      }
+    } catch (e) {
+      throw new Error("Error in evaluating expression");
+    }
+
+    return this.result;
+  }
+}
+// Solved by CHATGPT
 
 module.exports = Calculator;
