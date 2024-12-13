@@ -1,0 +1,15 @@
+{
+  "name": "cohort-codes",
+  "version": "1.0.0",
+  "main": "simple_auth.js",
+  "scripts": {
+    "start": "node simple_auth.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

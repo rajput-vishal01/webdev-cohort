@@ -23,6 +23,7 @@ The Cohort-2 course is designed to provide a comprehensive understanding of web 
 - **Node.js** and **Express.js**
 - **MongoDB** and **PostgreSQL**
 - **Git and GitHub**
+- **Postman** (to verify and test API routes)
 
 ## 🚧 Progress Tracker
 
