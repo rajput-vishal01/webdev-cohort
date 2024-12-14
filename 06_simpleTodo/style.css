@@ -1,0 +1,75 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Styling for the add button */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for todo items container */
+#todos {
+  margin-top: 20px;
+}
+
+/* Styling for individual todo items */
+#todos > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#todos > div > div {
+  flex: 1;
+}
+
+#todos > div > button {
+  margin-left: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#todos > div > button:hover {
+  background-color: #218838;
+}
+
+/* Styling for "Done!" text */
+#todos > div > div:last-child {
+  color: #28a745;
+  font-weight: bold;
+  margin-left: 10px;
+}

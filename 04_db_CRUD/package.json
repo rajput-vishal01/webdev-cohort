@@ -1,0 +1,16 @@
+{
+  "name": "cohort-codes",
+  "version": "1.0.0",
+  "main": "db.js",
+  "scripts": {
+    "start": "node db.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4"
+  }
+}
