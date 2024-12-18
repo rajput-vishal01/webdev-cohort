@@ -31,7 +31,9 @@ The Cohort-2 course is designed to provide a comprehensive understanding of web 
 | ---- | --------------------- | -------------- |
 | 1    | HTML & CSS Basics     | ✅ Completed   |
 | 2    | JavaScript Essentials | ✅ Completed   |
-| 3    | Backend Basics        | 🚧 In Progress |
+| 3    | Backend Basics        | ✅ Completed   |
+| 3    | React Basics          | ✅ Completed   |
+| 3    | React Deep Div        | 🚧 In Progress |
 | ...  | ...                   | ...            |
 
 ## 📬 Contact
