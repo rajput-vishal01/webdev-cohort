@@ -1,6 +1,6 @@
 # Web Development Cohort-2 Journey 🚀
 
-This repository documents my journey of learning and building projects while completing the **Cohort-2** course by Harkirat Singh. It includes my progress, notes, assignments, and projects that showcase my understanding of web development concepts.
+This repository documents my journey of learning and building projects while completing the **Cohort-2** course by Harkirat Singh and watching other tutorials on YT. It includes my progress, notes, assignments, and projects that showcase my understanding of web development concepts.
 
 ## 🗂 Repository Structure
 
