@@ -3,7 +3,7 @@
 //     filter: string
 //     burst: number
 // }
-
+     
 // interface Story {
 //     createStory(): void
 // }
