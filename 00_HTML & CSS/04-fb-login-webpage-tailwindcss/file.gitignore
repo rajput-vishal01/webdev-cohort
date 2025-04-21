@@ -1,0 +1,6 @@
+# Ignore Tailwind CSS generated files
+/dist/
+/public/
+
+# Ignore Node.js dependencies
+/node_modules/

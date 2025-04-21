@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="../navbar/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    html, body {
+      scroll-behavior: smooth;
+    }
+    /* Custom animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation ease 2s forwards;
+    }
+    @keyframes fadeInAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>  
+<body>
+    <!-- Navbar -->
+    <!-- Imported from navbar folder using JavaScript -->
+    <div id="navbar"></div>
+
+
+    <div class="cont fade-in">    
+        <div class="cover"  >
+            <h1 style="filter: brightness(90%); font-family: 'Courier New', Courier, monospace;">SERVICES</h1>
+        </div>
+        <div class="container">
+            <div class="box1">
+                <h1 class="content1">01</h1>
+                <h1 class="content2">Vehicle Maintenance</h1>
+                <p class="content3">Regular vehicle maintenance keeps your car running smoothly and helps prevent costly repairs. We offer comprehensive maintenance services, including fluid checks, brake inspections, and more.</p>
+            </div>
+            <div class="box1">
+                <h1 class="content1">02</h1>
+                <h1 class="content2">Tires Fix & Replacements</h1>
+                <p class="content3">We provide tire repair and replacement services to ensure your safety on the road. Our experts handle everything from puncture repairs to full tire replacements with precision.</p>
+            </div>
+            <div class="box1">
+                <h1 class="content1">03</h1>
+                <h1 class="content2">Oil & Brake Checks</h1>
+                <p class="content3">Regular oil changes and brake checks are crucial for your vehicle's performance. Our team performs thorough checks and replacements to keep your car running efficiently.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box1">
+                <h1 class="content1">04</h1>
+                <h1 class="content2">Battery Change</h1>
+                <p class="content3">Don't get stranded with a dead battery. Our battery replacement services ensure your vehicle starts every time. We offer high-quality batteries and professional installation.</p>
+            </div>
+            <div class="box1">
+                <h1 class="content1">05</h1>
+                <h1 class="content2">Tow Truck</h1>
+                <p class="content3">Our reliable tow truck services are available 24/7 to assist you in case of a breakdown. We provide prompt and safe towing to your desired location.</p>
+            </div>
+            <div class="box1">
+                <h1 class="content1">06</h1>
+                <h1 class="content2">Engine Repairs</h1>
+                <p class="content3">Engine trouble? Our skilled mechanics diagnose and repair engine issues efficiently. From minor repairs to major overhauls, we've got you covered.</p>
+            </div>
+        </div>
+        <div class="end">
+            <div class="endleft">
+                <h1>Need One Of Them? Give Us a Call Now!</h1>
+            </div>
+            <div class="endright">
+                <button class="content4" style="font-family: 'Courier New', Courier, monospace;">Contact Us</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Mechanics</li>
+                        <li>Car Checks</li>
+                        <li>Oil and Brake Checks</li>
+                        <li>Breakdown Services</li>
+                        <li>Tire Change</li>
+                        <li>Battery Change</li>
+                    </ul>
+                </div>
+                <div class="footer-section hours">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 9am - 10pm</p>
+                    <p>Sun: 9am - 3pm</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Chandigarh Group of Colleges<br> Punjab, India 140307</p>
+                    <p><i class="fas fa-phone"></i> Tel: +01 010190101010</p>
+                    <p><i class="fas fa-envelope"></i> Email: support@autozenith.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 by AUTOZENITH.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+ // JavaScript to load the navbar
+ document.addEventListener('DOMContentLoaded', function() {
+        fetch('../navbar/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+
+            // Add event listeners for the navbar after it's been loaded
+            const signupButton = document.getElementById("signupButton");
+            const signupModal = document.getElementById("signupModal");
+            const loginToggle = document.getElementById("loginToggle");
+            const signupToggle = document.getElementById("signupToggle");
+            const loginForm = document.getElementById("loginForm");
+            const signupForm = document.getElementById("signupForm");
+
+            if (signupButton) {
+                signupButton.addEventListener("click", () => {
+                    signupModal.classList.toggle("hidden");
+                    document.body.classList.toggle("blur-background");
+                });
+            }
+
+            if (loginToggle) {
+                loginToggle.addEventListener("click", () => {
+                    loginToggle.classList.add("active");
+                    signupToggle.classList.remove("active");
+                    loginForm.classList.add("active");
+                    signupForm.classList.remove("active");
+                });
+            }
+
+            if (signupToggle) {
+                signupToggle.addEventListener("click", () => {
+                    signupToggle.classList.add("active");
+                    loginToggle.classList.remove("active");
+                    signupForm.classList.add("active");
+                    loginForm.classList.remove("active");
+                });
+            }
+
+            if (signupModal) {
+                signupModal.addEventListener("click", (e) => {
+                    if (e.target === signupModal) {
+                        signupModal.classList.add("hidden");
+                        document.body.classList.remove("blur-background");
+                    }
+                });
+            }
+          });
+    });
+    
+
+    </script>
+</body>
+</html>

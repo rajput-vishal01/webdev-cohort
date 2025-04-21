@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f4f8;
+}
+
+#center {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 80%;
+  width: 80%;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #d1e7f0;
+  height: 10%;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  border-radius: 2px;
+  align-items: center;
+  width: 80px;
+  background-color: white;
+  font-weight: 800;
+  color: #333;
+}
+
+.playArea {
+  height: 90%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f4f8;
+}
+
+.bubble {
+  display: flex;
+  margin: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #6cb2e0;
+  border-radius: 50%;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.6s;
+}
+
+.bubble:hover {
+  background-color: #97cbff;
+  transform: scale(1.1);
+}
+
+.over {
+  text-align: center;
+  color: red;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.finalScore {
+  text-align: center;
+  color: green;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.refreshNote {
+  text-align: center;
+  color: red;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.overContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13rem;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoZenith Contact Page</title>
+    <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="../navbar/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+       html, body {
+      scroll-behavior: smooth;
+    }
+    /* Custom animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation ease 2s forwards;
+    }
+    @keyframes fadeInAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .content-box {
+        padding: 8rem;
+      }
+      .content-left, .content-right {
+        padding: 3rem;
+      }
+      .content-right {
+        border-radius: 1.5rem;
+      }
+      .main-content-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <div class="cover fade-in">
+      <h1>CONTACT US</h1>
+    </div>
+
+    <div class="content-box">
+      <div class="content-left">
+        <p class="main-title">GET IN TOUCH</p>
+        <h1 class="main-heading">Contact us for assistance</h1>
+
+        <hr />
+        <p class="main-description" style="font-size: large; padding-top: 2rem">
+          We’re here to help you find the perfect vehicle and provide the best
+          customer service. Whether you have a question about our inventory,
+          need assistance with financing, or want to schedule a test drive, our
+          team is ready to assist you. Reach out to us through any of the
+          following methods:
+        </p>
+        <br />
+
+        <div class="content-lb">
+          <div class="addr">
+            <div class="loc-class">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <a class="loc-class1" href="#"
+                style="text-decoration: none; color: black; font-weight: bold; font-size: larger;" >Chandigarh Group of Colleges, Punjab, India 140307</a
+              >
+            </div>
+            <br>
+            <div class="call-class">
+              <i class="fa-solid fa-phone-volume"></i>
+              <a class="call-class1" href="#"
+              style="text-decoration: none; color: black; font-weight: bold; font-size: larger;">Tel: +01 010190101010</a>
+            </div>
+            <br>
+            <div class="mail-title">
+              <i class="fa-regular fa-envelope"></i>
+              <a class="mail-class1" href="#"
+              style="text-decoration: none; color: black; font-weight: bold; font-size: larger;">Email: support@autozenith.in</a>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-right">
+        <div class="box">
+          <h1 class="box-title">Send us a message</h1>
+          <br />
+          <input
+            class="int"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+          />
+          <br />
+          <br />
+          <input
+            class="int"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          />
+          <br />
+          <br />
+          <textarea
+            class="int"
+            id="message"
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+          <br />
+          <button class="but-icon" type="button" id="submitButton">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <br />
+    <hr />
+
+    <div class="main-content-4" style="padding-top: 0rem;">
+      <div class="main-content-4">
+        <div class="content-3">
+          <p>HOW WE DO IT</p>
+          <h1>Learn More About Us</h1>
+          <hr>
+          <p class="let-be">
+              Welcome to AutoZenith, where innovation meets excellence in the
+              automotive world. At AutoZenith, we are passionate about crafting
+              vehicles that embody cutting-edge technology, exceptional
+              performance, and unparalleled style.
+          </p>
+        </div>
+        <div class="content-4-box">
+          <div class="box-1">
+              <h2>Variety of Cars</h2>
+              <p>
+                  From sleek sedans to robust SUVs, we have the perfect vehicle for
+                  every driver. Discover unparalleled performance and style with
+                  AutoZenith's exceptional lineup.
+              </p>
+          </div>
+          <div class="box-2">
+              <h2>Competitive Pricing</h2>
+              <p>
+                  AutoZenith excels in competitive pricing, offering top-tier vehicles
+                  at unmatched value. By strategically analyzing market trends and
+                  customer needs, we ensure our prices remain attractive.
+              </p>
+          </div>
+          <div class="box-3">
+              <h2>24/7 Support</h2>
+              <p>
+                  Experience peace of mind with AutoZenith's 24/7 support, always
+                  ready to assist you on every journey. Trust us to keep you moving
+                  smoothly, day or night.
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-5">
+          <img class="i2" src="../pages/image/car1.webp" alt="" />
+          <div class="wrt-img">
+              <div class="txt-im">
+                  <p class="n1">NEWSLETTER</p>
+                  <h1 class="h1">Sign Up And Never Miss A Deal Again</h1>
+                  <p class="c1">
+                      We are committed to providing our customers with exceptional
+                      service, competitive pricing, and a wide range of vehicles to choose
+                      from.
+                  </p>
+                  <div class="mail-check">
+                      <input class="mail1" type="text" placeholder="Your Mail" />
+                      <button class="but-icon2" type="button" id="subscribeButton">Subscribe</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section services">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Mechanics</li>
+            <li>Car Checks</li>
+            <li>Oil and Brake Checks</li>
+            <li>Breakdown Services</li>
+            <li>Tire Change</li>
+            <li>Battery Change</li>
+          </ul>
+        </div>
+        <div class="footer-section hours">
+          <h3>Opening Hours</h3>
+          <p>Mon - Fri: 9am - 10pm</p>
+          <p>Sun: 9am - 3pm</p>
+          <div class="social-media">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Chandigarh Group of Colleges<br> Punjab, India 140307</p>
+          <p><i class="fas fa-phone"></i> Tel: +01 010190101010</p>
+          <p><i class="fas fa-envelope"></i> Email: support@autozenith.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 by AUTOZENITH.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("../navbar/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+
+            const signupButton = document.getElementById("signupButton");
+            const signupModal = document.getElementById("signupModal");
+            const loginToggle = document.getElementById("loginToggle");
+            const signupToggle = document.getElementById("signupToggle");
+            const loginForm = document.getElementById("loginForm");
+            const signupForm = document.getElementById("signupForm");
+
+            if (signupButton) {
+              signupButton.addEventListener("click", () => {
+                signupModal.classList.toggle("hidden");
+                document.body.classList.toggle("blur-background");
+              });
+            }
+
+            if (loginToggle) {
+              loginToggle.addEventListener("click", () => {
+                loginToggle.classList.add("active");
+                signupToggle.classList.remove("active");
+                loginForm.classList.add("active");
+                signupForm.classList.remove("active");
+              });
+            }
+
+            if (signupToggle) {
+              signupToggle.addEventListener("click", () => {
+                signupToggle.classList.add("active");
+                loginToggle.classList.remove("active");
+                signupForm.classList.add("active");
+                loginForm.classList.remove("active");
+              });
+            }
+
+            if (signupModal) {
+              signupModal.addEventListener("click", (e) => {
+                if (e.target === signupModal) {
+                  signupModal.classList.add("hidden");
+                  document.body.classList.remove("blur-background");
+                }
+              });
+            }
+          });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    to left,
+    #0e0f19,
+    #1a1b25,
+    #272732,
+    #33333f,
+    #40404c
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 360px;
+  height: 600px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.contentBox h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contentBox p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.payBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: #e0f7fa;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.leftBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.imageBox img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.pBox p {
+  margin: 0;
+  color: #333;
+}
+
+.pBox p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pBox p:last-child {
+  font-size: 1.1rem;
+  color: #009688;
+}
+
+.rightBox a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.orderButton {
+  width: 90%;
+  padding: 15px;
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.orderButton:hover {
+  background-color: #00796b;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cancelButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #00796b;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cancelButton a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}

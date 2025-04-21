@@ -1,0 +1,31 @@
+[
+  {
+    "id": "car1",
+    "name": "Tesla Model S",
+    "intro": "An electric sedan with impressive performance and cutting-edge technology.",
+    "details": "The Tesla Model S is known for its long range, fast acceleration, and innovative features. It offers a range of over 400 miles and can accelerate from 0 to 60 mph in under 2 seconds.",
+    "img": "img/img1.jpg"
+  },
+  {
+    "id": "car2",
+    "name": "BMW i8",
+    "intro": "A plug-in hybrid sports car with striking looks and innovative technology.",
+    "details": "The BMW i8 combines the performance of a sports car with the efficiency of a plug-in hybrid. It features a futuristic design and offers an exhilarating driving experience.",
+    "img": "img/img2.jpg"
+  },
+  {
+    "id": "car3",
+    "name": "Ford Mustang GT",
+    "intro": "An iconic American muscle car known for its powerful performance and classic design.",
+    "details": "The Ford Mustang GT is equipped with a potent V8 engine that delivers thrilling acceleration and an exhilarating driving experience. With its timeless design and legendary status.",
+    "img": "img/img3.jpg"
+  },
+  {
+    "id": "car4",
+    "name": "Bugatti Chiron",
+    "intro": "A hypercar that pushes the boundaries of automotive engineering with unmatched speed and luxury.",
+    "details": "The Bugatti Chiron epitomizes automotive excellence with its quad-turbocharged W16 engine, propelling it from 0 to 60 mph in under 2.5 seconds and reaching over 260 mph.",
+    "img": "img/img4.png"
+  }
+  
+]

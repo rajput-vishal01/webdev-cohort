@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../navbar/style.css">
+</head>
+<style>
+    html, body {
+      scroll-behavior: smooth;
+    }
+    /* Custom animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation ease 2s forwards;
+    }
+    @keyframes fadeInAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+</style>
+<body>
+    <div class="cont fade-in" >
+        <!-- Navbar -->
+        <div id="navbar"></div>
+
+        <div class="cover">
+            <h1>ABOUT US</h1>
+        </div>
+
+        <div class="about-section" style="background-color:rgba(228, 224, 224, 0.71);">
+            <div class="about-content">
+                <h2 style=" color:#ff0000">Welcome to AutoZenith</h2>
+                <p>At AutoZenith, we are passionate about cars and dedicated to providing the best car buying experience for our customers. With over 20 years in the automobile industry, we have built a reputation for excellence, trust, and customer satisfaction.</p>
+                <p>Our showroom features a wide range of vehicles from top manufacturers around the world. Whether you are looking for a luxury sedan, a sporty coupe, or a family-friendly SUV, we have something to suit every need and budget.</p>
+                <p>We take pride in our knowledgeable staff who are always ready to assist you in finding the perfect vehicle. Our team is committed to providing personalized service to ensure that every customer leaves our showroom satisfied.</p>
+                <p>At AutoZenith, we also offer a range of services to keep your vehicle in top condition. From regular maintenance to major repairs, our state-of-the-art service center is equipped to handle all your automotive needs.</p>
+                <p>Visit us today and experience the AutoZenith difference. We look forward to serving you!</p>
+            </div>
+            <div class="about-image">
+                <img src="./image/logo.png" alt="Showroom Image" class="about_img">
+            </div>
+        </div>
+
+        <div class="offer-section">
+            <div class="offer-cover">
+                <h2>What We Offer</h2>
+            </div>
+            <div class="offer-content">
+                <div class="offer-item">
+                    <img src="./image/413extreme-silver-33-1.jpg" alt="Luxury Cars">
+                    <h3>Luxury Cars</h3>
+                    <p>Experience the pinnacle of automotive luxury with our selection of high-end vehicles.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="./image/2023-lightning-lap-bmw-2-series-mu-104-1675444206.jpg" alt="Sporty Coupes">
+                    <h3>Sporty Coupes</h3>
+                    <p>Get behind the wheel of a sporty coupe and feel the thrill of the road.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="./image/10best-trucks-suvs-2023-kia-telluride-105-1673299910.jpg" alt="Family SUVs">
+                    <h3>Family SUVs</h3>
+                    <p>Discover our range of family-friendly SUVs, perfect for any adventure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Mechanics</li>
+                    <li>Car Checks</li>
+                    <li>Oil and Brake Checks</li>
+                    <li>Breakdown Services</li>
+                    <li>Tire Change</li>
+                    <li>Battery Change</li>
+                </ul>
+            </div>
+            <div class="footer-section hours">
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 9am - 10pm</p>
+                <p>Sun: 9am - 3pm</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Chandigarh Group of Colleges<br> Punjab, India 140307</p>
+                <p><i class="fas fa-phone"></i> Tel: +01 010190101010</p>
+                <p><i class="fas fa-envelope"></i> Email: support@autozenith.in</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 by AUTOZENITH.</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // JavaScript to load the navbar
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../navbar/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+
+            // Add event listeners for the navbar after it's been loaded
+            const signupButton = document.getElementById("signupButton");
+            const signupModal = document.getElementById("signupModal");
+            const loginToggle = document.getElementById("loginToggle");
+            const signupToggle = document.getElementById("signupToggle");
+            const loginForm = document.getElementById("loginForm");
+            const signupForm = document.getElementById("signupForm");
+
+            if (signupButton) {
+                signupButton.addEventListener("click", () => {
+                    signupModal.classList.toggle("hidden");
+                    document.body.classList.toggle("blur-background");
+                });
+            }
+
+            if (loginToggle) {
+                loginToggle.addEventListener("click", () => {
+                    loginToggle.classList.add("active");
+                    signupToggle.classList.remove("active");
+                    loginForm.classList.add("active");
+                    signupForm.classList.remove("active");
+                });
+            }
+
+            if (signupToggle) {
+                signupToggle.addEventListener("click", () => {
+                    signupToggle.classList.add("active");
+                    loginToggle.classList.remove("active");
+                    signupForm.classList.add("active");
+                    loginForm.classList.remove("active");
+                });
+            }
+
+            if (signupModal) {
+                signupModal.addEventListener("click", (e) => {
+                    if (e.target === signupModal) {
+                        signupModal.classList.add("hidden");
+                        document.body.classList.remove("blur-background");
+                    }
+                });
+            }
+          });
+    });
+</script>
+
+</body>
+</html>

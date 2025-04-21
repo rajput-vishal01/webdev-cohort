@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoZenith</title>
+    <link rel="stylesheet" href="/navbar/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="logo/Screenshot__26_-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      /* Custom animation */
+      .fade-in {
+        opacity: 0;
+        animation: fadeInAnimation ease 2s forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <!-- Imported from navbar folder using JavaScript -->
+      <div id="navbar"></div>
+
+      <!-- Main Content -->
+      <div class="hero-1" id="hero-1">
+        <div class="content fade-in">
+          <img src="img/main.jpg" alt="banner" class="banner-image" />
+          <div class="hero-text">
+            <p style="font-size: xx-large; font-weight: bold">
+              Upgrade Your Driving Experience
+            </p>
+            <button
+              class="btn"
+              style="background-color: transparent; border: 1px solid white"
+            >
+              <a href="#collections" style="text-decoration: none; color: white"
+                >EXPLORE</a
+              >
+            </button>
+            <button
+              class="btn"
+              style="
+                width: 9rem;
+                font-size: medium;
+                align-items: center;
+                padding: 0.4rem;
+              "
+            >
+              <a
+                href="#intro-section"
+                style="text-decoration: none; color: white"
+                >ABOUT</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sections -->
+      <div class="boxes fade-in">
+        <div class="box1 fade-in">
+          <div class="icon1"><i class="fa-solid fa-hammer"></i></div>
+          <div
+            class="box1content"
+            style="font-size: x-large; font-weight: bolder"
+          >
+            <p>REPAIR</p>
+          </div>
+          <div class="desc">
+            <p>Professional car repair services for all makes and models.</p>
+          </div>
+        </div>
+        <div class="box2 fade-in">
+          <div class="icon2"><i class="fa-sharp fa-solid fa-car"></i></div>
+          <div
+            class="box2content"
+            style="font-size: x-large; font-weight: bolder"
+          >
+            <p>BUY & SELL</p>
+          </div>
+          <div class="desc">
+            <p>Buy and sell cars with confidence and ease.</p>
+          </div>
+        </div>
+        <div class="box3 fade-in">
+          <div class="icon3"><i class="fa-solid fa-users-gear"></i></div>
+          <div
+            class="box3content"
+            style="font-size: x-large; font-weight: bolder"
+          >
+            <p>MAINTAIN</p>
+          </div>
+          <div class="desc">
+            <p>
+              Comprehensive maintenance services to keep your car in top
+              condition.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-section fade-in" id="intro-section">
+        <div class="intro-image fade-in">
+          <img
+            src="logo/Screenshot__26_-removebg-preview.png"
+            alt="Introduction Image"
+            class="intro-img"
+          />
+        </div>
+        <div class="intro-text fade-in">
+          <h2>About AutoZenith</h2>
+          <p>
+            AutoZenith has been at the forefront of automotive excellence since
+            its inception. Our journey began with a passion for cars and a
+            commitment to quality service. Over the years, we have grown into a
+            trusted name in the industry, offering a wide range of services
+            including repair, maintenance, and buying & selling of vehicles.
+          </p>
+          <p>
+            Our mission is to provide our customers with top-notch automotive
+            solutions that cater to their diverse needs. Whether you're looking
+            to repair your car, buy a new one, or keep it in perfect running
+            condition, AutoZenith is here to help.
+          </p>
+          <p>
+            Join us on our journey and experience the difference with
+            AutoZenith. We are dedicated to excellence and driven by innovation.
+          </p>
+        </div>
+      </div>
+
+      <div class="collections-section fade-in" id="collections">
+        <h2
+          style="color: red; padding: 1rem; font-size: xx-large; margin: 2rem"
+        >
+          Our Collections
+        </h2>
+        <div class="collections-grid fade-in">
+          <!-- Cards will be generated here by JavaScript -->
+        </div>
+      </div>
+
+      <footer class="fade-in">
+        <div class="footer-container">
+          <div class="footer-section services">
+            <h3>Our Services</h3>
+            <ul>
+              <li>Mechanics</li>
+              <li>Car Checks</li>
+              <li>Oil and Brake Checks</li>
+              <li>Breakdown Services</li>
+              <li>Tire Change</li>
+              <li>Battery Change</li>
+            </ul>
+          </div>
+          <div class="footer-section hours">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 9am - 10pm</p>
+            <p>Sun: 9am - 3pm</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://x.com/?lang=en"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/feed/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Chandigarh Group of
+              Collages<br />Punjab, India 140307
+            </p>
+            <p><i class="fas fa-phone"></i> Tel: +01 010190101010</p>
+            <p><i class="fas fa-envelope"></i> Email: support@autozenith.in</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 by AUTOZENITH.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- .........ERROR................ -->
+
+    <div id="message">
+      <p>
+        Sorry, your current device's screen size is too small to display this
+        content properly. Please open the webpage on a device with a larger
+        screen, such as an iPad, laptop, or PC.
+      </p>
+    </div>
+
+    <script>
+      // JavaScript to load the navbar
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("navbar/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script src="navbar/script.js"></script>
+  </body>
+</html>

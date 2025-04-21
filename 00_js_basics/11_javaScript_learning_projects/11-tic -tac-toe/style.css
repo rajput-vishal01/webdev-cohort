@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
+.container{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1vmin;
+
+
+}
+
+.box{
+  height: 18vmin; 
+  width: 18vmin; 
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+  cursor: pointer;
+  font-size: 8vmin;
+  font-family: 'Courier New', Courier, monospace;
+  color: #877A8A;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+h1{
+  height: 1rem;
+  font-family:monospace;
+  padding-top:3rem ;
+}
+
+.resetButton{
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.8);
+  cursor: pointer;
+  background-color: #D9D9D9;
+  font-family: 'Courier New', Courier, monospace;
+  color: #877A8A;
+
+}
+.resetButton:hover {
+  transform: scale(1.15);
+}
+
+.newButton{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.8);
+  cursor: pointer;
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  color: #9d9e9c;
+
+}
+.newButton:hover {
+  transform: scale(1.15);
+}
+
+.result{
+ font-size: xx-large;
+ margin-bottom: 3rem;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+
+}
+
+.hide{
+ display: none;
+}
+
+.box.O {
+  color: blue; 
+}
+
+.box.X {
+  color: red; 
+}
+
+@media only screen and (max-width: 600px) {
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+  }
+
+  .box {
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 10vmin;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .resetButton,
+  .newButton {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1040px) {
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+  }
+
+  .box {
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 7vmin;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .resetButton,
+  .newButton {
+    font-size: 1.1rem;
+  }
+}
+
+
