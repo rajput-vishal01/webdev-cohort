@@ -1,5 +1,7 @@
 00_assignments
 
+.vscode
+
 # Logs
 logs
 *.log
